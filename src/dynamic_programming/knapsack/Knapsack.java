@@ -31,8 +31,9 @@ public class Knapsack {
   static int knapsack(int W, int N, int[] wt, int[] val) {
 
     /**
-     * dp[i][w] 的定义: 对于前 i 个物品，当前背包容量为 w，这种情况下可以装的最大价值是 dp[i][w]。
-     * d[0][w] = d[i][0] = 0
+     * dp[i][w] 的定义: 对于前 i 个物品，背包容量为 w，这种情况下可以装的最大价值是 dp[i][w]。
+     * 这里的w不是指已占用重量，也不是剩余重量，而是指容量为w的背包
+     * 其中base case: d[0][w] = d[i][0] = 0
      * 注意：dp中第i个物品分别对应wt和val中的i-1的值
      */
     int[][] dp = new int[N + 1][W + 1];
