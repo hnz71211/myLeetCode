@@ -33,7 +33,7 @@ public class MinEatingSpeed875 {
     return left;
   }
 
-  // 返回最大堆索引
+  // 返回最大堆
   int getMax(int[] piles) {
     int max = 0;
     for (int n : piles)
