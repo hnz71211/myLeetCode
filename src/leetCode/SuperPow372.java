@@ -22,6 +22,7 @@ public class SuperPow372 {
     int[] desc = new int[n - 1];
     System.arraycopy(b, 0, desc, 0, n - 1);
 
+    // 递归次方运算
     int part1 = pow(a, last);
     int part2 = pow(superPow(a, desc), 10);
 
